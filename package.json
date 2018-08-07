@@ -1,6 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
+  "homepage" : "https://anthonycr.me",
   "private": true,
   "scripts": {
     "start": "npm-run-all -p watch-css start-ts",
