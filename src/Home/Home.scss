@@ -5,4 +5,12 @@
   color: $textColor;
   font-family: $fonts;
   height: 100%;
+
+  @include xsm {
+    padding: 24px;
+  }
+
+  @include sm {
+    padding: 80px;
+  }
 }
