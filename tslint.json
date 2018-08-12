@@ -8,6 +8,14 @@
     ]
   },
   "rules": {
-    "jsx-boolean-value": false
+    "jsx-boolean-value": false,
+    "interface-name": false,
+    "ordered-imports": [
+      false, {
+        "grouped-imports": false,
+        "import-sources-order": "any",
+        "named-imports-order": "case-insensitive"
+      }
+    ]
   }
 }

@@ -9,8 +9,37 @@ header {
     margin-bottom: 32px;
   }
 
-  h1 {
-    margin: 0;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      line-height: 36px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+
+    .social-link {
+      @include xsm {
+        width: 36px;
+        height: 36px;
+        margin-left: 12px;
+      }
+
+      @include sm {
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+      }
+
+      svg {
+        fill: transparent;
+      }
+
+    }
   }
 
   hr {

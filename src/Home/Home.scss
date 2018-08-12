@@ -5,12 +5,21 @@
   color: $textColor;
   font-family: $fonts;
   height: 100%;
+  width: 100%;
 
   @include xsm {
     padding: 24px;
   }
 
   @include sm {
+    padding: 40px;
+  }
+
+  @include md {
+    padding: 64px;
+  }
+
+  @include lg {
     padding: 80px;
   }
 }
