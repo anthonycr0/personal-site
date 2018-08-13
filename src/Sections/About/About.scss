@@ -31,6 +31,8 @@
 
   .about-content {
     p {
+      font-weight: 500;
+      
       @include sm {
         font-size: 18px;
       }
