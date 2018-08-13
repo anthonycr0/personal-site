@@ -3,12 +3,11 @@ import profilePhoto from '../../Images/profile-photo.jpeg';
 import Header from '../../Shared/Header/Header';
 import './About.css';
 
-
 class About extends React.Component {
   public render() {
     return (
       <div className="about">
-        <Header title="About Me"/>
+        <Header title="About Me" showIcons/>
         <div className="about-container">
           <img className="profile-pic" src={profilePhoto} alt="Photo of Anthony"/>
           <div className="about-content">

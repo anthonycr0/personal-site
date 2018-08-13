@@ -2,10 +2,12 @@
 
 header {
   @include xsm {
+    margin-top: 24px;
     margin-bottom: 16px;
   }
   
   @include sm {
+    margin-top: 64px;
     margin-bottom: 32px;
   }
 
