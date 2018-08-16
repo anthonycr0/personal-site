@@ -1,11 +1,14 @@
 @import '../Styles/styles.scss';
 
-.Home {
+.home {
   background-color: $darkGrey;
   color: $textColor;
   font-family: $fonts;
-  height: 100%;
   width: 100%;
+}
+
+.home-contents {
+  margin: auto;
 
   @include xsm {
     padding: 24px;
@@ -21,5 +24,10 @@
 
   @include lg {
     padding: 80px;
+  }
+
+  @include xl {
+    padding: 40px;
+    max-width: 1320px;
   }
 }
