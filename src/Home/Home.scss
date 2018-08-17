@@ -5,6 +5,7 @@
   color: $textColor;
   font-family: $fonts;
   width: 100%;
+  height: 100%;
 }
 
 .home-contents {
@@ -29,5 +30,15 @@
   @include xl {
     padding: 40px;
     max-width: 1320px;
+  }
+
+  .about {
+    @include xsm {
+      margin-bottom: 24px;
+    }
+
+    @include sm {
+      margin-bottom: 64px;
+    }
   }
 }
