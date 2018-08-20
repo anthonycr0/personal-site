@@ -1,0 +1,55 @@
+@import '../../../Styles/styles.scss';
+
+.artwork {
+  width: 100%;
+  display: flex;
+  background-color: #1A1A1A;
+
+  @include xsm {
+    flex-direction: column;
+  }
+
+  @include lg {
+    flex-direction: row;
+  }
+
+  .artwork-image {
+    @include xsm {
+      width: 100%;
+    }
+  
+    @include lg {
+      width: 60%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .artwork-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include xsm {
+      width: 100%;
+      min-height: 200px;
+    }
+
+    @include md {
+      min-height: 300px;
+    }
+  
+    @include lg {
+      width: 40%;
+    }
+
+    h1.artwork-title {
+      font-size: 72px;
+      font-weight: 700;
+    }
+  }
+}

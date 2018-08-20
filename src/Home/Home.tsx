@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 
 import About from '../Sections/About/About';
 import Projects from '../Sections/Projects/Projects';
+import Art from '../Sections/Art/Art';
 
 class Home extends React.Component {
   public render() {
@@ -12,7 +12,7 @@ class Home extends React.Component {
         <div className="home-contents">
           <About/>
           <Projects/>
-          <Link to="/original">June 2017</Link>
+          <Art/>
         </div>
       </div>
     );

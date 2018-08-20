@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import './Project.css';
 
 import testProject from '../../../Images/test2.png';
@@ -14,16 +15,16 @@ function Project({projectData}: Props) {
   };
 
   return (
-    <a className="project" href="">
+    <Link to="/original" className="project">
       <div className="project-image">
-        <img src={testProject} alt=""/>
-      </div>
-      
-      <div className="project-info" style={style}>
-        <h2 className="project-title">{projectData.title}</h2>
-        <p className="project-desc">{projectData.desc}</p>
-      </div>
-    </a>
+          <img src={testProject} alt=""/>
+        </div>
+        
+        <div className="project-info" style={style}>
+          <h2 className="project-title">{projectData.title}</h2>
+          <p className="project-desc">{projectData.desc}</p>
+        </div>
+    </Link>
   );
 }
 

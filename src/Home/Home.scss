@@ -32,7 +32,7 @@
     max-width: 1320px;
   }
 
-  .about {
+  .about, .projects {
     @include xsm {
       margin-bottom: 24px;
     }
