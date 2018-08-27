@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   background-color: #1A1A1A;
+  @include hover-scale;
 
   @include xsm {
     flex-direction: column;
