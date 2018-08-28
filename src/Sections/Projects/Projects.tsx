@@ -3,39 +3,24 @@ import Header from '../../Shared/Header/Header';
 import Project from './Project/Project';
 import './Projects.css';
 
-export interface ProjectsData {
-  data: ProjectData[]
-}
+import siteContent from '../../site-content.json';
 
 export interface ProjectData {
   title: string,
   desc: string,
-  color: string,
+  url: string,
+  backgroundColor: string,
+  textColor: string,
   image: string
 }
 
 class Projects extends React.Component {
 
-  private projects: ProjectsData;
+  private projects: ProjectData[];
 
   constructor(props: any) {
     super(props);
-    this.projects = {
-      data: [
-        {
-          title: 'Streamee',
-          desc: `Australia's first online, live TV platform`,
-          color: '#F65800',
-          image: ''
-        },
-        {
-          title: 'Quick Maths',
-          desc: `An app based on the viral hit, Man’s Not Hot.`,
-          color: '#2C2C2C',
-          image: ''
-        }
-      ]
-    }
+    this.projects = siteContent.projects;
   }
 
   public render() {
@@ -50,7 +35,7 @@ class Projects extends React.Component {
   }
 
   private renderProjects() {
-    return this.projects.data.map((project, index) => <Project projectData={project} key={index}/>);
+    return this.projects.map((project, index) => <Project projectData={project} key={index}/>);
   }
 }
 

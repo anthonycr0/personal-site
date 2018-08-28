@@ -1,5 +1,4 @@
 import * as React from 'react';
-import profilePhoto from '../../Images/profile-photo.jpeg';
 import Header from '../../Shared/Header/Header';
 import './About.css';
 
@@ -9,7 +8,7 @@ class About extends React.Component {
       <div className="about">
         <Header title="About Me" showIcons/>
         <div className="about-container">
-          <img className="profile-pic" src={profilePhoto} alt="Photo of Anthony"/>
+          <img className="profile-pic" src="/Images/profile-photo.jpeg" alt="Photo of Anthony"/>
           <div className="about-content">
             <h1>Hi, I'm Anthony 👋</h1>
             <p>A 21 year-old Software Engineer / Designer from Melbourne, Australia.</p>
