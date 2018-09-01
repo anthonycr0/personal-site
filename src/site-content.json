@@ -3,7 +3,7 @@
   "projects": [
     {
       "title": "Streamee",
-      "desc": "Australia's first online, live TV platform",
+      "desc": "Australia's first online, live TV platform.",
       "url": "http://streamee.com.au/?test",
       "backgroundColor": "#F65800",
       "textColor": "#FFFFFF",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Pablo Edition",
-      "desc": "A special version of this site, inspired by Kanye West's The Life of Pablo album.",
+      "desc": "A special version of this site, inspired by Kanye West's The Life of Pablo.",
       "url": "/pablo",
       "backgroundColor": "#F28C5E",
       "textColor": "#000000",
@@ -32,6 +32,12 @@
       "backgroundColor": "#1D1D1D",
       "textColor": "#FFFFFF",
       "image": "/Images/original-mini.png"
+    }
+  ],
+  "art": [
+    {
+      "title": "Prompt",
+      "image": "/Images/prompt.png"
     }
   ]
 }

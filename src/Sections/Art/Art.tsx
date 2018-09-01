@@ -3,9 +3,7 @@ import Header from '../../Shared/Header/Header';
 import Artwork from './Artwork/Artwork';
 import './Art.css';
 
-export interface ArtData {
-  data: ArtworkData[]
-}
+import siteContent from '../../site-content.json';
 
 export interface ArtworkData {
   title: string,
@@ -14,18 +12,11 @@ export interface ArtworkData {
 
 class Art extends React.Component {
 
-  private art: ArtData;
+  private art: ArtworkData[];
 
   constructor(props: any) {
     super(props);
-    this.art = {
-      data: [
-        {
-          title: 'Prompt',
-          image: ''
-        }
-      ]
-    }
+    this.art = siteContent.art;
   }
 
   public render() {
@@ -40,7 +31,7 @@ class Art extends React.Component {
   }
 
   private renderArt() {
-    return this.art.data.map((artwork, index) => <Artwork artworkData={artwork} key={index}/>);
+    return this.art.map((artwork, index) => <Artwork artworkData={artwork} key={index}/>);
   }
 }
 
