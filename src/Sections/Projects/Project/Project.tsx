@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import './Project.css';
-
-import { ProjectData } from '../Projects';
+import { ProjectData } from '../ProjectData';
 
 export interface Props {
-  projectData: ProjectData,
+  projectData: ProjectData
 }
 
 class Project extends React.Component<Props> {

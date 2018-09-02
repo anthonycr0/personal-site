@@ -12,6 +12,7 @@
     "interface-name": false,
     "object-literal-sort-keys": false,
     "one-variable-per-declaration": false,
+    "no-console": false,
     "ordered-imports": [
       false, {
         "grouped-imports": false,

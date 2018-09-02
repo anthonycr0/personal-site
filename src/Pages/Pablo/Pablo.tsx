@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './Pablo.css';
+import { Link } from 'react-router-dom';
 
 class Pablo extends React.Component {
   public render() {
@@ -47,7 +48,7 @@ class Pablo extends React.Component {
                 <tr className="small-text">
                   <td colSpan={2}>21</td>
                   <td/>
-                  <td><a href="projects.html" target="_self">Projects</a></td>
+                  <td><Link to="/pablo/projects">Projects</Link></td>
                 </tr>
                 <tr className="small-text">
                   <td colSpan={2}>Foodie</td>

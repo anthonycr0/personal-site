@@ -1,18 +1,10 @@
 import * as React from 'react';
 import Header from '../../Shared/Header/Header';
 import Project from './Project/Project';
+import { ProjectData } from './ProjectData';
 import './Projects.css';
 
 import siteContent from '../../site-content.json';
-
-export interface ProjectData {
-  title: string,
-  desc: string,
-  url: string,
-  backgroundColor: string,
-  textColor: string,
-  image: string
-}
 
 class Projects extends React.Component {
 
