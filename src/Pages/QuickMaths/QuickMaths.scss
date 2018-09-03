@@ -1,0 +1,73 @@
+@import '../../Styles/styles.scss';
+
+.quick-maths {
+  @include main-page;
+
+  .quick-maths-contents {
+    @include main-contents;
+  }
+
+  .content {
+    display: flex;
+    
+    @include xsm {
+      flex-direction: column;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    @include md {
+      display: grid;
+      grid-column-gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+ 
+  .promo-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include xsm {
+      max-width: 400px;
+    }
+
+    @include md {
+      max-width: initial;
+    }
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 24px;
+
+    .headline {
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+  
+  .badges {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  @include xsm {
+    .badge img {
+      height: 40px;
+    }
+  }
+
+  @include sm {
+    .badge img {
+      height: 50px;
+    }
+  }
+}
