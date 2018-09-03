@@ -10,7 +10,7 @@ function Header({ title, showIcons }: Props) {
   return (
     <header>
       <div className="header-content">
-        <h1>{title}</h1>
+        <h1 id={title}>{title}</h1>
         {showIcons ? 
           <div className="social-links">
             <a className="social-link" href="https://twitter.com/anthonycr0">

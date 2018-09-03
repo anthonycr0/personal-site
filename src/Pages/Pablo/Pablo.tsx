@@ -78,7 +78,7 @@ class Pablo extends React.Component {
                   <td><a href="https://twitter.com/anthonycr0" target="_blank">Twitter</a></td>
                 </tr>
                 <tr className="small-text">
-                  <td colSpan={2}><a href="/" target="_self">Back</a></td>
+                  <td colSpan={2}><Link to="/">← Home</Link></td>
                   <td/>
                   <td><a href="https://linkedin.com/in/anthonycr0" target="_blank">LinkedIn</a></td>
                 </tr>

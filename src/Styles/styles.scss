@@ -13,3 +13,18 @@ h1 {
     font-size: 36px;
   }
 }
+
+a {
+  &:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}

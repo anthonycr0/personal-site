@@ -27,3 +27,42 @@
     transform: scale(1.01);
   }
 }
+
+@mixin main-page {
+  background-color: $darkGrey;
+  color: $textColor;
+  font-family: $fonts;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@mixin main-contents {
+  margin: auto;
+  animation: fadein 1s;
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @include xsm {
+    padding: 24px;
+  }
+
+  @include sm {
+    padding: 40px;
+  }
+
+  @include md {
+    padding: 64px;
+  }
+
+  @include lg {
+    padding: 80px;
+  }
+
+  @include xl {
+    padding: 40px;
+    max-width: 1320px;
+  }
+}
