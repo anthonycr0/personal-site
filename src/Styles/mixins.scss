@@ -19,6 +19,10 @@
   @media (min-width: 70em) { @content; }
 }
 
+@mixin xxl {
+  @media (min-width: 80em) { @content; }
+}
+
 @mixin hover-scale {
   transition: all .25s ease-in-out;
 

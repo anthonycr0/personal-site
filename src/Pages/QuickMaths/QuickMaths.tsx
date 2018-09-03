@@ -9,7 +9,7 @@ class QuickMaths extends React.Component {
       <div className="quick-maths">
         <div className="quick-maths-contents">
           <Link to="/">← Home</Link>
-          <Header title="Quick Maths" showIcons/>
+          <Header title="Quick Maths" showIcons={false}/>
           <div className="content">
           <img className="promo-image" src="/Images/quick-maths/quick-maths-promo.png" alt="Quick Maths for iOS and Android"/>
             <div className="info">

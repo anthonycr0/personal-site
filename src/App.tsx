@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import Pablo from './Pages/Pablo/Pablo';
 import PabloProjects from './Pages/Pablo/PabloProjects/PabloProjects';
 import QuickMaths from './Pages/QuickMaths/QuickMaths';
+import Original from './Pages/Original/Original';
 
 class App extends React.Component {
   public render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <Route exact path="/quick-maths" component={QuickMaths}/>
           <Route exact path="/pablo" component={Pablo}/>
           <Route exact path="/pablo/projects" component={PabloProjects}/>
+          <Route exact path="/original" component={Original}/>
         </Switch>
       </BrowserRouter>
     );
