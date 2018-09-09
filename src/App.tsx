@@ -1,20 +1,28 @@
 import * as React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import logo from './logo.svg';
+import ScrollToTop from './Components/ScrollToTop';
+import Home from './Home/Home';
+import Pablo from './Pages/Pablo/Pablo';
+import PabloProjects from './Pages/Pablo/PabloProjects/PabloProjects';
+import QuickMaths from './Pages/QuickMaths/QuickMaths';
+import Original from './Pages/Original/Original';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/quick-maths" component={QuickMaths}/>
+            <Route exact path="/pablo" component={Pablo}/>
+            <Route exact path="/pablo/projects" component={PabloProjects}/>
+            <Route exact path="/original" component={Original}/>
+          </Switch>
+        </ScrollToTop>
+      </BrowserRouter>
     );
   }
 }

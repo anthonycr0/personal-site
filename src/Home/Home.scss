@@ -1,0 +1,19 @@
+@import '../Styles/styles.scss';
+
+.home {
+  @include main-page;
+
+  .home-contents {
+    @include main-contents;
+  
+    .about, .projects, .art {
+      @include xsm {
+        margin-bottom: $base * 3;
+      }
+  
+      @include sm {
+        margin-bottom: $base * 8;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// Breakpoints
+@mixin xsm {
+  @media (min-width: 0em) { @content; }
+}
+
+@mixin ksm {
+  @media (min-width: 22em) { @content; }
+}
+
+@mixin sm {
+  @media (min-width: 37.5em) { @content; }
+}
+
+@mixin md {
+  @media (min-width: 50em) { @content; }
+}
+
+@mixin lg {
+  @media (min-width: 64em) { @content; }
+}
+
+@mixin xl {
+  @media (min-width: 70em) { @content; }
+}
+
+@mixin xxl {
+  @media (min-width: 80em) { @content; }
+}
+
+@mixin hover-scale {
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+  }
+}
+
+@mixin main-page {
+  background-color: $darkGrey;
+  color: $textColor;
+  font-family: $fonts;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@mixin main-contents {
+  margin: auto;
+  animation: fadein 1s;
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @include xsm {
+    padding: 8px;
+  }
+
+  @include ksm {
+    padding: 24px;
+  }
+
+  @include sm {
+    padding: 40px;
+  }
+
+  @include md {
+    padding: 64px;
+  }
+
+  @include lg {
+    padding: 80px;
+  }
+
+  @include xl {
+    padding: 40px;
+    max-width: 1320px;
+  }
+}

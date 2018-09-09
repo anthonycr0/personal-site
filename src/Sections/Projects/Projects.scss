@@ -1,0 +1,24 @@
+@import '../../Styles/styles.scss';
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 260px;
+  grid-row-gap: $base * 3;
+  grid-column-gap: $base * 6;
+  
+  @include xsm {
+    padding-left: $base;
+    padding-right: $base;
+  }
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: $base * 3;
+    padding-right: $base * 3;
+  }
+
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

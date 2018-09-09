@@ -1,0 +1,56 @@
+@import '../../Styles/styles.scss';
+
+header {
+  @include xsm {
+    margin-bottom: $base * 2;
+  }
+  
+  @include sm {
+    margin-bottom: $base * 4;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+
+    .social-link {
+      @include xsm {
+        width: 24px;
+        height: 24px;
+        margin-left: $base * 2;
+      }
+
+      @include sm {
+        width: 28px;
+        height: 28px;
+        margin-left: $base * 3;
+      }
+
+      .svg-path {
+        fill: #FFFFFF;
+      }
+
+      &:hover {
+        .svg-path.twitter-icon {
+          fill: #1DA1F2;
+        }
+
+        .svg-path.linkedin-icon {
+          fill: #0077B5;
+        }
+      }
+
+    }
+  }
+
+  hr {
+    border: 1px solid #232323;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+}
