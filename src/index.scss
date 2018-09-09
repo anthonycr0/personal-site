@@ -1,5 +1,9 @@
 @import './Styles/vars.scss';
 
+html {
+  background-color: $darkGrey;
+}
+
 html, body {
   margin: 0;
   padding: 0;
