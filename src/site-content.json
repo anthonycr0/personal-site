@@ -1,6 +1,14 @@
 {
   "name": "Anthony Roberts",
   "age": "21",
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "9 September 2018"
+  },
+  "links": {
+    "twitter": "https://twitter.com/anthonycr0",
+    "linkedin": "https://linkedin.com/in/anthonycr0"
+  },
   "projects": [
     {
       "title": "Streamee",
@@ -8,7 +16,7 @@
       "url": "http://streamee.com.au/?test",
       "backgroundColor": "#F65800",
       "textColor": "#FFFFFF",
-      "image": "/Images/streamee-mini.png"
+      "image": "/Images/projects/streamee-mini.png"
     },
     {
       "title": "Quick Maths",
@@ -16,7 +24,7 @@
       "url": "/quick-maths",
       "backgroundColor": "#2C2C2C",
       "textColor": "#FFFFFF",
-      "image": "/Images/quick-maths-mini.png"
+      "image": "/Images/projects/quick-maths-mini.png"
     },
     {
       "title": "Pablo Edition",
@@ -24,7 +32,7 @@
       "url": "/pablo",
       "backgroundColor": "#F28C5E",
       "textColor": "#000000",
-      "image": "/Images/pablo-mini.png"
+      "image": "/Images/projects/pablo-mini.png"
     },
     {
       "title": "Original Edition",
@@ -32,13 +40,17 @@
       "url": "/original",
       "backgroundColor": "#1D1D1D",
       "textColor": "#FFFFFF",
-      "image": "/Images/original-mini.png"
+      "image": "/Images/projects/original-mini.png"
     }
   ],
   "art": [
     {
       "title": "Prompt",
-      "image": "/Images/prompt.png"
+      "image": "/Images/art/prompt.png"
+    },
+    {
+      "title": "Time",
+      "image": "/Images/art/time.png"
     }
   ]
 }

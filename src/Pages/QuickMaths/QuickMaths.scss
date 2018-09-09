@@ -12,17 +12,17 @@
     
     @include xsm {
       flex-direction: column;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: $base;
+      padding-right: $base;
     }
 
     @include md {
       display: grid;
-      grid-column-gap: 24px;
+      grid-column-gap: $base * 3;
       grid-template-columns: repeat(2, 1fr);
       
-      padding-left: 24px;
-      padding-right: 24px;
+      padding-left: $base * 3;
+      padding-right: $base * 3;
     }
   }
 
@@ -44,7 +44,7 @@
 
   .description {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: $base * 3;
 
     .headline {
       font-weight: 600;

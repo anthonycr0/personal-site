@@ -3,6 +3,10 @@
   @media (min-width: 0em) { @content; }
 }
 
+@mixin ksm {
+  @media (min-width: 22em) { @content; }
+}
+
 @mixin sm {
   @media (min-width: 37.5em) { @content; }
 }
@@ -50,6 +54,10 @@
   }
 
   @include xsm {
+    padding: 8px;
+  }
+
+  @include ksm {
     padding: 24px;
   }
 

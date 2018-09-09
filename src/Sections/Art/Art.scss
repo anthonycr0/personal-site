@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
 
-  padding-left: 24px;
-  padding-right: 24px;
+  @include xsm {
+    padding-left: $base;
+    padding-right: $base;
+  }
+
+  @include md {
+    padding-left: $base * 3;
+    padding-right: $base * 3;
+  }
 }

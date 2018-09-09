@@ -1,10 +1,13 @@
 import * as React from 'react';
 import './Footer.css';
 
+import siteContent from '../../site-content.json';
+
 function Footer() {
   return (
     <footer>
-      <p>Designed in Figma. Built with React + TypeScript.  Copyright © {new Date().getFullYear()} Anthony Roberts.</p>
+      <p>Designed in Figma. Built with React + TypeScript + Code.</p>
+      <p>Version {siteContent.metadata.version}, published {siteContent.metadata.lastUpdated}.</p>
       <p>Proudly made in Melbourne 🇦🇺</p>
     </footer>
   );

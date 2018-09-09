@@ -8,11 +8,11 @@
   
     .about, .projects, .art {
       @include xsm {
-        margin-bottom: 24px;
+        margin-bottom: $base * 3;
       }
   
       @include sm {
-        margin-bottom: 64px;
+        margin-bottom: $base * 8;
       }
     }
   }

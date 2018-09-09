@@ -10,22 +10,22 @@
     @include xsm {
       width: 80px;
       height: 80px;
-      margin-right: 24px;
+      margin-right: $base * 3;
     }
 
     @include sm {
       width: 140px;
       height: 140px;
-      margin-left: 24px;
-      margin-right: 24px;
+      margin-left: $base * 3;
+      margin-right: $base * 3;
     }
 
     @include md {
       width: 200px;
       height: 200px;
 
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: $base * 5;
+      margin-right: $base * 5;
     }
   }
 

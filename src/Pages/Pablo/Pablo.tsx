@@ -1,6 +1,8 @@
 import * as React from 'react';
-import './Pablo.css';
 import { Link } from 'react-router-dom';
+import './Pablo.css';
+
+import siteContent from '../../site-content.json';
 
 class Pablo extends React.Component {
   public render() {
@@ -75,12 +77,12 @@ class Pablo extends React.Component {
                   <td/>
                   <td/>
                   <td/>
-                  <td><a href="https://twitter.com/anthonycr0" target="_blank">Twitter</a></td>
+                  <td><a href={siteContent.links.twitter} target="_blank">Twitter</a></td>
                 </tr>
                 <tr className="small-text">
                   <td colSpan={2}><Link to="/">← Home</Link></td>
                   <td/>
-                  <td><a href="https://linkedin.com/in/anthonycr0" target="_blank">LinkedIn</a></td>
+                  <td><a href={siteContent.links.linkedin} target="_blank">LinkedIn</a></td>
                 </tr>
               </tbody>
             </table>
