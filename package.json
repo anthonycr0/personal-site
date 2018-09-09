@@ -1,15 +1,16 @@
 {
   "name": "personal-site",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://anthonycr.me",
   "private": true,
   "scripts": {
     "start": "npm-run-all -p watch-css start-ts",
     "start-ts": "react-scripts-ts start",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "build": "npm-run-all build-css build-ts",
+    "build": "npm-run-all build-css build-ts remove-sourcemaps",
     "build-css": "node-sass-chokidar src/ -o src/",
     "build-ts": "react-scripts-ts build",
+    "remove-sourcemaps": "rm build/static/js/*.map && rm build/static/css/*.map",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "predeploy": "npm run build",
