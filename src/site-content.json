@@ -2,8 +2,8 @@
   "name": "Anthony Roberts",
   "age": "21",
   "metadata": {
-    "version": "1.0.2",
-    "lastUpdated": "9 September 2018"
+    "version": "1.0.3",
+    "lastUpdated": "10 January 2019"
   },
   "links": {
     "twitter": "https://twitter.com/anthonycr0",
@@ -25,6 +25,14 @@
       "backgroundColor": "#2C2C2C",
       "textColor": "#FFFFFF",
       "image": "/Images/projects/quick-maths-mini.png"
+    },
+    {
+      "title": "macOS 'Concept'",
+      "desc": "A concept for what macOS should look like today.",
+      "url": "/macos-concept",
+      "backgroundColor": "#FAFAFA",
+      "textColor": "#414141",
+      "image": "/Images/projects/macos-concept-mini.png"
     },
     {
       "title": "Pablo Edition",
