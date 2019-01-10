@@ -1,0 +1,42 @@
+@import '../../Styles/styles.scss';
+
+.mac-concept {
+  @include main-page;
+
+  .mac-concept-contents {
+    @include main-contents;
+  }
+
+  .content {
+    display: flex;
+    
+    @include xsm {
+      flex-direction: column;
+      padding-left: $base;
+      padding-right: $base;
+    }
+
+    @include md {
+      padding-left: $base * 3;
+      padding-right: $base * 3;
+    }
+  }
+
+ 
+  .promo-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: $base * 6;
+
+    .headline {
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+}
