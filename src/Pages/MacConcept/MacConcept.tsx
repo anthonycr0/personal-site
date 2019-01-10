@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import './MacConcept.css';
 import Header from '../../Shared/Header/Header';
+import concept from '../../Images/macos-concept/macos-concept.png';
 
 class MacConcept extends React.Component {
   public render() {
@@ -11,7 +12,7 @@ class MacConcept extends React.Component {
           <Link to="/">← Home</Link>
           <Header title="macOS Concept" showIcons={false}/>
           <div className="content">
-          <img className="promo-image" src="/Images/macos-concept/macos-concept.png" alt="Concept artwork for present-day macOS"/>
+          <img className="promo-image" src={concept} alt="Concept artwork for present-day macOS"/>
             <div className="info">
               <div className="description">
                 <p className="headline">Not a concept for tomorrow, but a concept for today.</p>
