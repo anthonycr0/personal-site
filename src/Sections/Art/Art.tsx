@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Header from '../../Shared/Header/Header';
 import Artwork from './Artwork/Artwork';
-import './Art.css';
+import './Art.scss';
 
 import siteContent from '../../site-content.json';
 

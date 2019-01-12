@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './Original.css';
+import './Original.scss';
 
-import siteContent from '../../site-content.json';
 import { ProjectData } from '../../Sections/Projects/ProjectData';
+import siteContent from '../../site-content.json';
+import desktopImg from '../../Images/original/bg-desktop.jpg';
+import mobileImg from '../../Images/original/bg-desktop.jpg';
 
 class Original extends React.Component {
   private projects: ProjectData[];
@@ -17,8 +19,8 @@ class Original extends React.Component {
     return (
       <div className="original">
         <div className="original-contents">
-          <img className="background" src="/Images/original/bg-desktop.jpg"/>
-          <img className="background-mobile" src="/Images/original/bg-mobile.jpg"/>
+          <img className="background" src={desktopImg}/>
+          <img className="background-mobile" src={mobileImg}/>
           <div className="content">
             <div className="name">
               Anthony Roberts

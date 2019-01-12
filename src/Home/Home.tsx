@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Home.css';
+import './Home.scss';
 
 import About from '../Sections/About/About';
 import Projects from '../Sections/Projects/Projects';

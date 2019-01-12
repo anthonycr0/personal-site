@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 import ScrollToTop from './Components/ScrollToTop';
 import Home from './Home/Home';
@@ -17,11 +17,12 @@ class App extends React.Component {
         <ScrollToTop>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/quick-maths" component={QuickMaths}/>
-            <Route exact path="/macos-concept" component={MacConcept}/>
+            <Route path="/quick-maths" component={QuickMaths}/>
+            <Route path="/macos-concept" component={MacConcept}/>
             <Route exact path="/pablo" component={Pablo}/>
-            <Route exact path="/pablo/projects" component={PabloProjects}/>
-            <Route exact path="/original" component={Original}/>
+            <Route path="/pablo/projects" component={PabloProjects}/>
+            <Route path="/original" component={Original}/>
+            <Route component={Home}/>
           </Switch>
         </ScrollToTop>
       </BrowserRouter>

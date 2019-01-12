@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Artwork.css';
+import './Artwork.scss';
 
 import { ArtworkData } from '../Art';
 

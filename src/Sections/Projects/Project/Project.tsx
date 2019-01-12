@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './Project.css';
+import './Project.scss';
 import { ProjectData } from '../ProjectData';
 
 export interface Props {
@@ -41,10 +41,10 @@ class Project extends React.Component<Props> {
 
   private getImageTemplate(): any {
     const { image } = this.props.projectData;
-
+    
     return (
       <div className="project-image">
-        <img src={image} alt=""/>
+        <img src={process.env.PUBLIC_URL + image} alt=""/>
       </div>
     );
   }

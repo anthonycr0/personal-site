@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Header.css';
+import './Header.scss';
 
 import siteContent from '../../site-content.json';
 

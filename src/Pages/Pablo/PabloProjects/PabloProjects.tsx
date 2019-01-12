@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import '../Pablo.css';
+import '../Pablo.scss';
 
 import siteContent from '../../../site-content.json';
 import { ProjectData } from '../../../Sections/Projects/ProjectData';
