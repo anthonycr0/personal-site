@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './Pablo.css';
+import './Pablo.scss';
 
 import siteContent from '../../site-content.json';
+import selfieImg from '../../Images/pablo/me.jpg';
+import inNOutImg from '../../Images/pablo/in-n-out.jpg';
 
 class Pablo extends React.Component {
   public render() {
@@ -10,8 +12,8 @@ class Pablo extends React.Component {
       <div className="pablo">
         <div className="background">
           <div className="album-cover" id="album-cover">
-            <img className="pic1" src="/Images/pablo/me.jpg" alt="A photo of Anthony"/>
-            <img className="pic2" src="/Images/pablo/in-n-out.jpg" alt="A photo In-N-Out burger"/>
+            <img className="pic1" src={selfieImg} alt="A photo of Anthony"/>
+            <img className="pic2" src={inNOutImg} alt="A photo In-N-Out burger"/>
             <table className="content-table">
               <tbody>
                 <tr className="large-text">

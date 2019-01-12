@@ -2,7 +2,7 @@ import * as React from 'react';
 import Header from '../../Shared/Header/Header';
 import Project from './Project/Project';
 import { ProjectData } from './ProjectData';
-import './Projects.css';
+import './Projects.scss';
 
 import siteContent from '../../site-content.json';
 

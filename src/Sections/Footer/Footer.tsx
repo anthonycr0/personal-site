@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Footer.css';
+import './Footer.scss';
 
 import siteContent from '../../site-content.json';
 

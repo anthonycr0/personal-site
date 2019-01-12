@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './MacConcept.css';
+import './MacConcept.scss';
+
 import Header from '../../Shared/Header/Header';
-import concept from '../../Images/macos-concept/macos-concept.png';
+import mainImg from '../../Images/macos-concept/macos-concept.png';
+import finderLightImg from '../../Images/macos-concept/finder-light.png';
+import finderDarkImg from '../../Images/macos-concept/finder-dark.png';
 
 class MacConcept extends React.Component {
   public render() {
@@ -12,7 +15,7 @@ class MacConcept extends React.Component {
           <Link to="/">← Home</Link>
           <Header title="macOS Concept" showIcons={false}/>
           <div className="content">
-          <img className="promo-image" src={concept} alt="Concept artwork for present-day macOS"/>
+          <img className="promo-image" src={mainImg} alt="Concept artwork for present-day macOS"/>
             <div className="info">
               <div className="description">
                 <p className="headline">Not a concept for tomorrow, but a concept for today.</p>
@@ -25,11 +28,11 @@ class MacConcept extends React.Component {
                 <p>Files and folders are easily distinguishable by thinner tags, and the expand/collapse folder button has been removed. Instead, simply click on the folder icon to reveal or hide its contents.</p>
               </div>
 
-              <img className="promo-image" src="/Images/macos-concept/finder-light.png" alt="A light theme for Finder"/>
+              <img className="promo-image" src={finderLightImg} alt="A light theme for Finder"/>
               <div className="description">
                 <p className="headline">A classic light theme.</p>
               </div>
-              <img className="promo-image" src="/Images/macos-concept/finder-dark.png" alt="A dark theme for Finder"/>
+              <img className="promo-image" src={finderDarkImg} alt="A dark theme for Finder"/>
               <div className="description">
                 <p className="headline">A bold dark theme.</p>
               </div>
