@@ -9,6 +9,7 @@ import PabloProjects from './Pages/Pablo/PabloProjects/PabloProjects';
 import QuickMaths from './Pages/QuickMaths/QuickMaths';
 import Original from './Pages/Original/Original';
 import MacConcept from './Pages/MacConcept/MacConcept';
+import OneRegDetail from './Pages/OneRegDetail/OneRegDetail';
 
 class App extends React.Component {
   public render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/quick-maths" component={QuickMaths}/>
+            <Route path="/auspost-registration" component={OneRegDetail}/>
             <Route path="/macos-concept" component={MacConcept}/>
             <Route exact path="/pablo" component={Pablo}/>
             <Route path="/pablo/projects" component={PabloProjects}/>
