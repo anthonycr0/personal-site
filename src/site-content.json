@@ -37,7 +37,7 @@
     {
       "title": "Streamee",
       "desc": "Australia's first online, live TV platform.",
-      "url": "http://streamee.com.au/?test",
+      "url": "/streamee",
       "backgroundColor": "#F65800",
       "textColor": "#FFFFFF",
       "image": "/Images/projects/streamee-mini.png"

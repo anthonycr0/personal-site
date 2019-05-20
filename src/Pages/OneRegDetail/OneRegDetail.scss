@@ -39,10 +39,12 @@
   }
 
   .description {
+    @include paragraph;
     width: 100%;
     margin-bottom: $base * 6;
 
     .headline {
+      font-family: $fonts;
       font-weight: 600;
       font-size: 22px;
     }

@@ -1,9 +1,9 @@
 @import '../../Styles/styles.scss';
 
-.quick-maths {
+.streamee-detail {
   @include main-page;
 
-  .quick-maths-contents {
+  .streamee-detail-contents {
     @include main-contents;
   }
 
@@ -17,59 +17,27 @@
     }
 
     @include md {
-      display: grid;
-      grid-column-gap: $base * 3;
-      grid-template-columns: repeat(2, 1fr);
-      
       padding-left: $base * 3;
       padding-right: $base * 3;
     }
   }
 
- 
   .promo-image {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: $base * 6;
     width: 100%;
-
-    @include xsm {
-      max-width: 400px;
-    }
-
-    @include md {
-      max-width: initial;
-    }
   }
 
   .description {
     @include paragraph;
     width: 100%;
-    margin-bottom: $base * 3;
+    margin-bottom: $base * 6;
 
     .headline {
       font-family: $fonts;
       font-weight: 600;
       font-size: 22px;
-    }
-  }
-  
-  .badges {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    max-width: 500px;
-  }
-
-  @include xsm {
-    .badge img {
-      height: 40px;
-    }
-  }
-
-  @include sm {
-    .badge img {
-      height: 50px;
     }
   }
 }
