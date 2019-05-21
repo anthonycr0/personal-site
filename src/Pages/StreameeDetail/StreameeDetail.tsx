@@ -55,13 +55,13 @@ class StreameeDetail extends React.Component {
               <div className="description">
                 <p>
                   I pushed forward regardless, and with the news that more of the networks would soon be streaming online I decided to release Streamee on the App Store.
-                  Except, for anyone who has ever tried to release something on the App Store, you would know it wouldn’t been that easy.
+                  Except, for anyone who has ever tried to release something on the App Store, you would know it wouldn’t be that easy.
                   It didn’t get past App Review. Turns out I needed a “license” to stream content that I didn’t own. Interesting.
                 </p>
 
                 <p>
                   So, how do you get a service out there without an app? Turns out a website is a good place to start.
-                  In late 2016 I built streamee.com.au, a fully web-based version of the original Streamee app.
+                  In late 2016 I built <a href="http://streamee.com.au/?test" className="underline">streamee.com.au</a>, a fully web-based version of the original Streamee app.
                   But this would require a few changes to how it worked. For example, the guide.
                   I couldn’t expect people to wait around for 20 seconds+ for the guide to load, and storing 14+ channels worth of guide data wasn’t really an option, not to mention the load this would place on the community-hosted guide data I was consuming.
                   So I built a “backend”. This consisted of a Python script that would fetch all the guide data for each state for that day, transform it to a more readable format, and upload it as a JSON file to an AWS S3 bucket.
@@ -120,7 +120,7 @@ class StreameeDetail extends React.Component {
                 </p>
               </div>
               <div className="description">
-                <p><a href="http://streamee.com.au/?test">Visit Streamee →</a></p>
+                <p><a href="http://streamee.com.au/?test" className="underline">Visit Streamee →</a></p>
               </div>
             </div>
           </div>
