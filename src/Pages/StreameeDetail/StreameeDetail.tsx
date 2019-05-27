@@ -18,7 +18,7 @@ class StreameeDetail extends React.Component {
           <Link to="/">← Home</Link>
           <Header title="Streamee" showIcons={false}/>
           <div className="content">
-          <img className="promo-image" src={streameeHeaderImg} alt="Concept artwork for present-day macOS"/>
+          <img className="promo-image" src={streameeHeaderImg} alt="Streamee, a TV experiement"/>
             <div className="info">
               <div className="description">
                 <p className="headline">Australia's first online, live TV platform.</p>

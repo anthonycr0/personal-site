@@ -1,0 +1,65 @@
+@import '../../Styles/styles.scss';
+
+.unihack-detail {
+  @include main-page;
+
+  .unihack-detail-contents {
+    @include main-contents;
+  }
+
+  .content {
+    display: flex;
+    
+    @include xsm {
+      flex-direction: column;
+      padding-left: $base;
+      padding-right: $base;
+    }
+
+    @include md {
+      padding-left: $base * 3;
+      padding-right: $base * 3;
+    }
+
+    hr {
+      @include break;
+    }
+  }
+
+  .promo-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: $base * 6;
+    width: 100%;
+
+    &.narrow {
+      @include xsm {
+        width: 100%;
+      }
+
+      @include md { 
+        width: 70%;
+      }
+    }
+  }
+
+  .description {
+    @include paragraph;
+    width: 100%;
+    margin-bottom: $base * 6;
+
+    .headline {
+      font-family: $fonts;
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    a.underline {
+      text-decoration: underline;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

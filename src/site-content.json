@@ -2,8 +2,8 @@
   "name": "Anthony Roberts",
   "age": "21",
   "metadata": {
-    "version": "1.0.9",
-    "lastUpdated": "21 May 2019"
+    "version": "1.0.10",
+    "lastUpdated": "27 May 2019"
   },
   "links": {
     "twitter": "https://twitter.com/anthonycr0",
@@ -13,7 +13,7 @@
     {
       "title": "UNIHACK Website",
       "desc": "The front door to Australia's largest student hackathon.",
-      "url": "https://unihack.net",
+      "url": "/unihack-website",
       "backgroundColor": "#FCC300",
       "textColor": "#000000",
       "image": "/Images/projects/unihack-mini.png"

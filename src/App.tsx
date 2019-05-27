@@ -11,6 +11,7 @@ import Original from './Pages/Original/Original';
 import MacConcept from './Pages/MacConcept/MacConcept';
 import OneRegDetail from './Pages/OneRegDetail/OneRegDetail';
 import StreameeDetail from './Pages/StreameeDetail/StreameeDetail';
+import UnihackDetail from './Pages/UnihackDetail/UnihackDetail';
 
 class App extends React.Component {
   public render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <ScrollToTop>
           <Switch>
             <Route exact path="/" component={Home}/>
+            <Route path="/unihack-website" component={UnihackDetail}/>
             <Route path="/streamee" component={StreameeDetail}/>
             <Route path="/quick-maths" component={QuickMaths}/>
             <Route path="/auspost-registration" component={OneRegDetail}/>
