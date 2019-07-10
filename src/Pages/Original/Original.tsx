@@ -34,7 +34,7 @@ class Original extends React.Component {
                 About Me
               </div>
               <div className="info">
-                21 years old.<br/>
+                {siteContent.age} years old.<br/>
                 Foodie 🍔, photographer 📱, skier ⛷.<br/>
                 Oh and also a web/mobile dev and user experience experimenter.
               </div>
