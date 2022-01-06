@@ -50,7 +50,7 @@ class Pablo extends React.Component {
                   <td colSpan={2}>Links</td>
                 </tr>
                 <tr className="small-text">
-                  <td colSpan={2}>{siteContent.age}</td>
+                  <td />
                   <td />
                   <td>
                     <Link to="/pablo/projects">Projects</Link>

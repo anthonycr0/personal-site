@@ -13,7 +13,7 @@ class About extends React.Component {
           <img className="profile-pic" src={profileImg} alt="Photo of Anthony"/>
           <div className="about-content">
             <h1>Hi, I'm Anthony 👋</h1>
-            <p>A {siteContent.age} year-old Software Engineer / Designer from Melbourne, Australia.</p>
+            <p>A Software Engineer / Designer from Melbourne, Australia.</p>
             <p>Food · Skiing · Photography · Tech</p>
           </div>
         </div>
