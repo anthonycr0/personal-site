@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './About.module.scss';
-import { Header } from '../../components/Header/Header';
 import { Heading } from '../../components/Typography/Heading';
 import profileImg from '../../../public/Images/profile-photo-400.jpeg';
 
