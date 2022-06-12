@@ -1,0 +1,51 @@
+@use '../../styles/breakpoints.scss';
+@use '../../styles/vars.scss';
+
+.hxl {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+
+  @include breakpoints.xsm {
+    font-size: 40px;
+  }
+
+  @include breakpoints.md {
+    font-size: 64px;
+  }
+}
+
+.h1 {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+
+  @include breakpoints.xsm {
+    font-size: 32px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 48px;
+  }
+}
+
+.h2 {
+  margin: 0;
+  font-weight: 800;
+
+  @include breakpoints.xsm {
+    font-size: 22px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  margin: 0;
+  font-family: vars.$fonts;
+  font-weight: 600;
+  font-size: 22px;
+  color: vars.$textColorDark;
+}

@@ -1,34 +1,20 @@
-import * as React from 'react';
-import Header from '../../Shared/Header/Header';
-import Project from './Project/Project';
-import { ProjectData } from './ProjectData';
-import './Projects.scss';
+import styles from './Projects.module.scss';
+import { Header } from '../../components/Header/Header';
+import { Project } from './Project/Project';
 
 import siteContent from '../../site-content.json';
 
-class Projects extends React.Component {
+export const Projects: React.FC = () => {
+  const projects = siteContent.projects.map((project, index) =>
+    <Project projectData={project} key={index} />
+  );
 
-  private projects: ProjectData[];
-
-  constructor(props: any) {
-    super(props);
-    this.projects = siteContent.projects;
-  }
-
-  public render() {
-    return (
-      <div className="projects">
-        <Header title="Projects" showIcons={false}/>
-        <div className="project-container">
-          {this.renderProjects()}
-        </div>
+  return (
+    <>
+      <Header title="Projects" />
+      <div className={styles.projectContainer}>
+        {projects}
       </div>
-    );
-  }
-
-  private renderProjects() {
-    return this.projects.map((project, index) => <Project projectData={project} key={index}/>);
-  }
+    </>
+  );
 }
-
-export default Projects;

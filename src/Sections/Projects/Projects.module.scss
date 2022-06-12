@@ -1,0 +1,18 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include xsm {
+    flex-direction: column;
+    margin: 0 (-$contentInsetMobile);
+  }
+
+  @include md {
+    flex-direction: row;
+    margin: 0 (-$contentInsetDesktop);
+  }
+
+}

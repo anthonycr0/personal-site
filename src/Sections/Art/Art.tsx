@@ -1,38 +1,31 @@
-import * as React from 'react';
-import Header from '../../Shared/Header/Header';
-import Artwork from './Artwork/Artwork';
-import './Art.scss';
+import styles from './Art.module.scss';
+import { Header } from '../../components/Header/Header';
+import { VStack } from '../../components/VStack/VStack';
+import { Artwork } from './Artwork/Artwork';
 
 import siteContent from '../../site-content.json';
 
 export interface ArtworkData {
   title: string,
+  date: string,
+  medium: string,
+  width: string,
+  height: string,
   image: string
 }
 
-class Art extends React.Component {
+export const Art: React.FC = () => {
+  const artData = siteContent.art;
+  const art = artData.map((artwork, index) => <Artwork artworkData={artwork} key={index} />);
 
-  private art: ArtworkData[];
-
-  constructor(props: any) {
-    super(props);
-    this.art = siteContent.art;
-  }
-
-  public render() {
-    return (
-      <div className="art">
-        <Header title="Art" showIcons={false}/>
-        <div className="art-container">
-          {this.renderArt()}
-        </div>
+  return (
+    <>
+      <Header title="Art" />
+      <div className={styles.artContainer}>
+        <VStack space='xlarge'>
+          {art}
+        </VStack>
       </div>
-    );
-  }
-
-  private renderArt() {
-    return this.art.map((artwork, index) => <Artwork artworkData={artwork} key={index}/>);
-  }
+    </>
+  );
 }
-
-export default Art;

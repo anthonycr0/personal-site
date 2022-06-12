@@ -1,65 +1,37 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import './Project.scss';
-import { ProjectData } from '../ProjectData';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './Project.module.scss';
+import { ProjectData } from '../types';
+import { VStack } from '../../../components/VStack/VStack';
+import { Heading } from '../../../components/Typography/Heading';
+import { Text } from '../../../components/Typography/Text';
 
-export interface Props {
+interface Props {
   projectData: ProjectData
 }
 
-class Project extends React.Component<Props> {
+export const Project: React.FC<Props> = (props) => {
+  const { url } = props.projectData;
 
-  constructor(props: Props) {
-    super(props);
+  const getImageTemplate = () => {
+    const { image, title } = props.projectData;
+
+    return <Image className={styles.projectImage} src={image} alt={title} layout="fill" />
   }
 
-  public render(): JSX.Element {
-    const { url } = this.props.projectData;
+  const getInfoTemplate = () => {
+    const { title, desc } = props.projectData;
 
-    if (url.match(/http/)) {
-      return (
-        <a href={url} className="project" target="_blank">
-          { this.getImageTemplate() }
-          { this.getInfoTemplate() }
-        </a>
-      );
-    }
-    return (
-      <Link to={url} className="project">
-        { this.getImageTemplate() }
-        { this.getInfoTemplate() }
-      </Link>
-    )
+    return <VStack className={styles.projectInfo} space='xxsmall'>
+      <Heading level='h2' className={styles.projectTitle}>{title}</Heading>
+      <Text variant='body' className={styles.projectDesc}>{desc}</Text>
+    </VStack>;
   }
 
-  private getStyle(): any {
-    return {
-      backgroundColor: this.props.projectData.backgroundColor,
-      color: this.props.projectData.textColor
-    };
-  }
-
-  private getImageTemplate(): any {
-    const { image } = this.props.projectData;
-    
-    return (
-      <div className="project-image">
-        <img src={process.env.PUBLIC_URL + image} alt=""/>
-      </div>
-    );
-  }
-
-  private getInfoTemplate(): any {
-    const { title, desc } = this.props.projectData;
-
-    return (
-      <div className="project-info" style={this.getStyle()}>
-        <h2 className="project-title">{title}</h2>
-        <p className="project-desc">{desc}</p>
-      </div>
-    );
-  }
-
+  return <Link href={url} >
+    <a className={styles.project}>
+      {getImageTemplate()}
+      {getInfoTemplate()}
+    </a>
+  </Link>
 }
-
-export default Project;

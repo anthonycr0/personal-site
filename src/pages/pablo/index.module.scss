@@ -1,0 +1,128 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.pablo {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+
+  .background {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F1F1;
+  }
+
+  .albumCover {
+    margin: 0 auto;
+    background-color: #F28C5E;
+    position: relative;
+  }
+
+  .contentTable {
+    position: relative;
+    top: 3%;
+  }
+
+  .largeText {
+    letter-spacing: -0.4px;
+
+    .colSpace {
+      width: 20px;
+    }
+  }
+
+  a:link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  .floatingImage {
+    z-index: 1;
+    position: absolute;
+  }
+
+
+  @include xsm {
+    .albumCover {
+      width: 100%;
+    }
+
+    .contentTable {
+      width: 97%;
+      left: 3%;
+    }
+
+    .smallText {
+      font-size: 2vh;
+      line-height: 2.2vh;
+    }
+
+    .largeText {
+      font-size: 3.8vh;
+      line-height: 4vh;
+    }
+
+    .floatingImage {
+      &.pic1 {
+        left: 20%;
+        top: 26%;
+        width: 200px;
+      }
+
+      &.pic2 {
+        left: 45%;
+        top: 68%;
+        width: 150px;
+      }
+    }
+  }
+
+  @include lg {
+    .albumCover {
+      height: 100%;
+    }
+
+    .contentTable {
+      width: 100%;
+      left: 12%;
+    }
+
+    .smallText {
+      font-size: 2.4vh;
+      line-height: 2.6vh;
+      letter-spacing: -0.4px;
+    }
+
+    .largeText {
+      font-size: 6.2vh;
+      line-height: 7.2vh;
+    }
+
+    .floatingImage {
+      &.pic1 {
+        left: 20%;
+        top: 30%;
+        width: 360px;
+      }
+
+      &.pic2 {
+        left: 45%;
+        top: 67%;
+        width: 270px;
+      }
+    }
+  }
+}

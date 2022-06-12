@@ -1,0 +1,49 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.grid {
+  @include md {
+    display: grid;
+    grid-column-gap: $base * 3;
+    row-gap: $base * 3;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.content {
+  display: flex;
+
+  @include xsm {
+    flex-direction: column;
+    padding-left: $base;
+    padding-right: $base;
+  }
+
+  @include md {
+    display: grid;
+    grid-column-gap: $base * 3;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-left: $base * 3;
+    padding-right: $base * 3;
+  }
+}
+
+.badges {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+@include xsm {
+  .badge img {
+    height: 40px;
+  }
+}
+
+@include sm {
+  .badge img {
+    height: 50px;
+  }
+}

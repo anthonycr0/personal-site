@@ -1,8 +1,8 @@
 {
   "name": "Anthony Roberts",
   "metadata": {
-    "version": "1.0.13",
-    "lastUpdated": "6 January 2022"
+    "version": "1.1.0",
+    "lastUpdated": "12 June 2022"
   },
   "links": {
     "linkedin": "https://linkedin.com/in/anthonycr0"
@@ -20,7 +20,7 @@
       "title": "AusPost Registration",
       "desc": "A video experiment for a huge reveal.",
       "url": "/auspost-registration",
-      "backgroundColor": "#FAFAFA",
+      "backgroundColor": "#F5F4F7",
       "textColor": "#414141",
       "image": "/Images/projects/auspost-registration-mini.png"
     },
@@ -28,7 +28,7 @@
       "title": "macOS 'Concept'",
       "desc": "A concept for what macOS should look like today.",
       "url": "/macos-concept",
-      "backgroundColor": "#FAFAFA",
+      "backgroundColor": "#BBABA8",
       "textColor": "#414141",
       "image": "/Images/projects/macos-concept-mini.png"
     },
@@ -36,8 +36,8 @@
       "title": "Streamee",
       "desc": "Australia's first online, live TV platform.",
       "url": "/streamee",
-      "backgroundColor": "#F65800",
-      "textColor": "#FFFFFF",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#F5692E",
       "image": "/Images/projects/streamee-mini.png"
     },
     {
@@ -68,10 +68,18 @@
   "art": [
     {
       "title": "Prompt",
+      "date": "2018",
+      "medium": "Digital Art",
+      "width": "3462",
+      "height": "2160",
       "image": "/Images/art/prompt.png"
     },
     {
       "title": "Time",
+      "date": "2018",
+      "medium": "Digital Art",
+      "width": "1124",
+      "height": "1166",
       "image": "/Images/art/time.png"
     }
   ]

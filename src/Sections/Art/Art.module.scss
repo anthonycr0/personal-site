@@ -1,0 +1,15 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.artContainer {
+  display: flex;
+  flex-direction: column;
+
+  @include xsm {
+    margin: 0 (-$contentInsetMobile);
+  }
+
+  @include md {
+    margin: 0 (-$contentInsetDesktop);
+  }
+}

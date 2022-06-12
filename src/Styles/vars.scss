@@ -12,3 +12,6 @@ $fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
 
 // Units
 $base: 8px;
+
+$contentInsetMobile: $base * 2;
+$contentInsetDesktop: $base * 5;

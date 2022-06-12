@@ -1,0 +1,29 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.content {
+  display: flex;
+
+  @include xsm {
+    flex-direction: column;
+    padding-left: $base;
+    padding-right: $base;
+  }
+
+  @include md {
+    padding-left: $base * 3;
+    padding-right: $base * 3;
+  }
+}
+
+.narrow {
+  margin: 0 auto;
+
+  @include xsm {
+    width: 100%;
+  }
+
+  @include md {
+    width: 70%;
+  }
+}

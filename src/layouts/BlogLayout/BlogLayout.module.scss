@@ -1,0 +1,17 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.content {
+  display: flex;
+
+  @include xsm {
+    flex-direction: column;
+    margin-top: $base * 3;
+  }
+
+  @include md {
+    padding-left: $base * 3;
+    padding-right: $base * 3;
+    margin-top: $base * 5;
+  }
+}

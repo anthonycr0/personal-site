@@ -1,0 +1,52 @@
+@use '../../../Styles/breakpoints.scss' as *;
+@use '../../../Styles/vars.scss' as *;
+
+.artwork {
+  width: 100%;
+  display: flex;
+
+  @include xsm {
+    flex-direction: column;
+  }
+
+  @include md {
+    &:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .artworkImage {
+    position: relative;
+
+    @include xsm {
+      width: 100%;
+    }
+
+    @include md {
+      width: 60%;
+    }
+  }
+
+  .artworkTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include xsm {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: $base * 4;
+      padding: 16px;
+    }
+
+    @include md {
+      width: 40%;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+}

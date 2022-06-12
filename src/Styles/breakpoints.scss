@@ -1,0 +1,44 @@
+@use './vars.scss';
+
+// Breakpoints
+@mixin xsm {
+  @media (min-width: 0em) {
+    @content;
+  }
+}
+
+@mixin ksm {
+  @media (min-width: 22em) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 37.5em) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 50em) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 64em) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 70em) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 80em) {
+    @content;
+  }
+}

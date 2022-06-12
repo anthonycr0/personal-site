@@ -1,0 +1,40 @@
+@use '../../styles/vars.scss' as *;
+
+.vstack {
+  &.xxsmall {
+    >*+* {
+      margin-top: $base / 2;
+    }
+  }
+
+  &.xsmall {
+    >*+* {
+      margin-top: $base;
+    }
+  }
+
+  &.small {
+    >*+* {
+      margin-top: $base * 2;
+    }
+  }
+
+  &.medium {
+    >*+* {
+      margin-top: $base * 3;
+    }
+  }
+
+  &.large {
+    >*+* {
+      margin-top: $base * 4;
+    }
+  }
+
+  &.xlarge {
+    >*+* {
+      margin-top: $base * 6;
+    }
+  }
+
+}

@@ -1,0 +1,39 @@
+@use '../../Styles/vars.scss' as *;
+@use '../../Styles/breakpoints.scss' as *;
+
+.header {
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socialLinks {
+    display: flex;
+    justify-content: space-between;
+
+    .socialLink {
+      @include xsm {
+        width: 24px;
+        height: 24px;
+        margin-left: $base * 2;
+      }
+
+      @include sm {
+        width: 28px;
+        height: 28px;
+        margin-left: $base * 3;
+      }
+
+      .svgPath {
+        fill: #FFFFFF;
+      }
+
+      &:hover {
+        .svgPath.linkedinIcon {
+          fill: #0077B5;
+        }
+      }
+
+    }
+  }
+}

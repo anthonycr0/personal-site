@@ -2,4 +2,4 @@
 
 This repository hosts my personal site.
 
-Built with React + TypeScript + Sass.
+Built with Next.js (React) + TypeScript + Sass.

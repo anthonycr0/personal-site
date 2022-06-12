@@ -1,0 +1,35 @@
+@use '../../styles/vars.scss';
+
+.body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.body-large {
+  margin: 0;
+  font-size: 16px;
+}
+
+.serif {
+  margin: 0;
+  line-height: 1.4;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: vars.$textColorDark;
+}
+
+.unstyled {
+  font-size: inherit;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}

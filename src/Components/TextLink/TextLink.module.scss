@@ -1,0 +1,22 @@
+@use '../../Styles/vars.scss' as *;
+
+.primary {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.secondary {
+  display: inline-block;
+  color: $highlightTextColor;
+  text-decoration: underline;
+
+  &:hover {
+    color: white;
+  }
+}

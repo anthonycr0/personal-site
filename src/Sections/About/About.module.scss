@@ -1,0 +1,69 @@
+@use '../../Styles/breakpoints.scss' as *;
+@use '../../Styles/vars.scss' as *;
+
+.container {
+  display: flex;
+  // margin-top: $base * 8;
+
+  @include xsm {
+    flex-direction: column;
+    // margin-left: $base * 3;
+    // margin-right: $base * 3;
+  }
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .profilePicContainer {
+    flex-shrink: 0;
+    object-fit: fill;
+
+    @include xsm {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include sm {
+      width: 140px;
+      height: 140px;
+    }
+
+    @include md {
+      width: 200px;
+      height: 200px;
+
+      margin-left: $base * 5;
+      margin-right: $base * 5;
+    }
+
+    .profilePic {
+      border-radius: 50%;
+    }
+  }
+
+  .aboutContent {
+    @include xsm {
+      margin-top: $base * 3;
+    }
+
+    @include md {
+      margin-top: 0;
+    }
+
+    p {
+      font-weight: 500;
+
+      @include sm {
+        font-size: 18px;
+      }
+
+      @include md {
+        font-size: 20px;
+      }
+    }
+
+  }
+}

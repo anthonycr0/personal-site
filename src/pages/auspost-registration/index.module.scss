@@ -1,0 +1,16 @@
+@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/vars.scss' as *;
+
+.promoVideo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+  @include xsm {
+    height: 200px;
+  }
+
+  @include sm {
+    height: 500px;
+  }
+}
